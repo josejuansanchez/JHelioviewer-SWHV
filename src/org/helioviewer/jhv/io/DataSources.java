@@ -48,6 +48,15 @@ public class DataSources {
                     put("schema", "/data/sources_v1.0.json");
                 }
             });
+            put("DEV-DIGITALOCEAN", new HashMap<String, String>() {
+                {
+                    put("API.getDataSources", "http://165.227.132.189/hv/api/?action=getDataSources&verbose=true&enable=[STEREO_A,STEREO_B,PROBA2]");
+                    put("API.getJP2Image", "http://165.227.132.189/hv/api/index.php?action=getJP2Image&");
+                    put("API.getJPX", "http://165.227.132.189/hv/api/index.php?action=getJPX&");
+                    put("schema", "/data/sources_v1.0.json");
+                    put("label", "Dev-DigitalOcean");
+                }
+            });
             /*
             put("GSFC SCI Test", new HashMap<String, String>() {
                 {
